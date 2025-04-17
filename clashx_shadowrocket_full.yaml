@@ -1,0 +1,19 @@
+
+port: 7890
+socks-port: 7891
+redir-port: 7892
+mixed-port: 7893
+allow-lan: false
+mode: rule
+proxies:
+  - name: HK 01
+    type: ss
+    server: hk01.example.com
+    port: 443
+    cipher: aes-128-gcm
+    password: pass
+    udp: true
+rules:
+  - DOMAIN-SUFFIX,openai.com,HK 01
+  - GEOIP,CN,DIRECT
+  - FINAL,HK 01
