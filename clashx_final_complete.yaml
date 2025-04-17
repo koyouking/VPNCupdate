@@ -1,0 +1,221 @@
+port: 7890
+socks-port: 7891
+redir-port: 7892
+mixed-port: 7893
+allow-lan: false
+mode: rule
+log-level: info
+ipv6: false
+external-controller: 0.0.0.0:9090
+experimental:
+  sniff-tls-sni: true
+dns:
+  enable: true
+  ipv6: false
+  listen: 0.0.0.0:53
+  enhanced-mode: rule
+  nameserver:
+    - 223.5.5.5
+    - 119.29.29.29
+  fallback:
+    - 1.1.1.1
+    - 8.8.8.8
+    - 9.9.9.9
+  fallback-filter:
+    geoip: true
+    ipcidr:
+      - 240.0.0.0/4
+
+proxies:
+  - {name: 🇭🇰 Hong Kong | 01, server: hk1.example.com, port: 443, type: trojan, password: pw, sni: chat.openai.com, skip-cert-verify: true, udp: true}
+  - {name: 🇭🇰 Hong Kong | 02, server: hk2.example.com, port: 443, type: trojan, password: pw, sni: chat.openai.com, skip-cert-verify: true, udp: true}
+  - {name: 🇭🇰 Hong Kong | 03, server: hk3.example.com, port: 443, type: trojan, password: pw, sni: chat.openai.com, skip-cert-verify: true, udp: true}
+  - {name: 🇭🇰 Hong Kong | 04, server: hk4.example.com, port: 443, type: trojan, password: pw, sni: chat.openai.com, skip-cert-verify: true, udp: true}
+  - {name: 🇭🇰 Hong Kong | 05, server: hk5.example.com, port: 443, type: trojan, password: pw, sni: chat.openai.com, skip-cert-verify: true, udp: true}
+  - {name: 🇭🇰 Hong Kong | 06, server: hk6.example.com, port: 443, type: trojan, password: pw, sni: chat.openai.com, skip-cert-verify: true, udp: true}
+  - {name: 🇭🇰 Hong Kong | 07, server: hk7.example.com, port: 443, type: trojan, password: pw, sni: chat.openai.com, skip-cert-verify: true, udp: true}
+  - {name: 🇭🇰 Hong Kong | 08, server: hk8.example.com, port: 443, type: trojan, password: pw, sni: chat.openai.com, skip-cert-verify: true, udp: true}
+  - {name: 🇯🇵 Japan | 01, server: jp1.example.com, port: 443, type: trojan, password: pw, sni: chat.openai.com, skip-cert-verify: true, udp: true}
+  - {name: 🇯🇵 Japan | 02, server: jp2.example.com, port: 443, type: trojan, password: pw, sni: chat.openai.com, skip-cert-verify: true, udp: true}
+  - {name: 🇯🇵 Japan | 03, server: jp3.example.com, port: 443, type: trojan, password: pw, sni: chat.openai.com, skip-cert-verify: true, udp: true}
+  - {name: 🇯🇵 Japan | 04, server: jp4.example.com, port: 443, type: trojan, password: pw, sni: chat.openai.com, skip-cert-verify: true, udp: true}
+  - {name: 🇯🇵 Japan | 05, server: jp5.example.com, port: 443, type: trojan, password: pw, sni: chat.openai.com, skip-cert-verify: true, udp: true}
+  - {name: 🇯🇵 Japan | 06, server: jp6.example.com, port: 443, type: trojan, password: pw, sni: chat.openai.com, skip-cert-verify: true, udp: true}
+  - {name: 🇯🇵 Japan | 07, server: jp7.example.com, port: 443, type: trojan, password: pw, sni: chat.openai.com, skip-cert-verify: true, udp: true}
+  - {name: 🇯🇵 Japan | 08, server: jp8.example.com, port: 443, type: trojan, password: pw, sni: chat.openai.com, skip-cert-verify: true, udp: true}
+  - {name: 🇹🇼 Taiwan | 01, server: tw1.example.com, port: 443, type: trojan, password: pw, sni: chat.openai.com, skip-cert-verify: true, udp: true}
+  - {name: 🇹🇼 Taiwan | 02, server: tw2.example.com, port: 443, type: trojan, password: pw, sni: chat.openai.com, skip-cert-verify: true, udp: true}
+  - {name: 🇹🇼 Taiwan | 03, server: tw3.example.com, port: 443, type: trojan, password: pw, sni: chat.openai.com, skip-cert-verify: true, udp: true}
+  - {name: 🇹🇼 Taiwan | 04, server: tw4.example.com, port: 443, type: trojan, password: pw, sni: chat.openai.com, skip-cert-verify: true, udp: true}
+  - {name: 🇹🇼 Taiwan | 05, server: tw5.example.com, port: 443, type: trojan, password: pw, sni: chat.openai.com, skip-cert-verify: true, udp: true}
+  - {name: 🇹🇼 Taiwan | 06, server: tw6.example.com, port: 443, type: trojan, password: pw, sni: chat.openai.com, skip-cert-verify: true, udp: true}
+  - {name: 🇹🇼 Taiwan | 07, server: tw7.example.com, port: 443, type: trojan, password: pw, sni: chat.openai.com, skip-cert-verify: true, udp: true}
+  - {name: 🇹🇼 Taiwan | 08, server: tw8.example.com, port: 443, type: trojan, password: pw, sni: chat.openai.com, skip-cert-verify: true, udp: true}
+  - {name: 🇸🇬 Singapore | 01, server: sg1.example.com, port: 443, type: trojan, password: pw, sni: chat.openai.com, skip-cert-verify: true, udp: true}
+  - {name: 🇸🇬 Singapore | 02, server: sg2.example.com, port: 443, type: trojan, password: pw, sni: chat.openai.com, skip-cert-verify: true, udp: true}
+  - {name: 🇸🇬 Singapore | 03, server: sg3.example.com, port: 443, type: trojan, password: pw, sni: chat.openai.com, skip-cert-verify: true, udp: true}
+  - {name: 🇸🇬 Singapore | 04, server: sg4.example.com, port: 443, type: trojan, password: pw, sni: chat.openai.com, skip-cert-verify: true, udp: true}
+  - {name: 🇸🇬 Singapore | 05, server: sg5.example.com, port: 443, type: trojan, password: pw, sni: chat.openai.com, skip-cert-verify: true, udp: true}
+  - {name: 🇸🇬 Singapore | 06, server: sg6.example.com, port: 443, type: trojan, password: pw, sni: chat.openai.com, skip-cert-verify: true, udp: true}
+  - {name: 🇸🇬 Singapore | 07, server: sg7.example.com, port: 443, type: trojan, password: pw, sni: chat.openai.com, skip-cert-verify: true, udp: true}
+  - {name: 🇸🇬 Singapore | 08, server: sg8.example.com, port: 443, type: trojan, password: pw, sni: chat.openai.com, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 United States | 01, server: us1.example.com, port: 443, type: trojan, password: pw, sni: chat.openai.com, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 United States | 02, server: us2.example.com, port: 443, type: trojan, password: pw, sni: chat.openai.com, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 United States | 03, server: us3.example.com, port: 443, type: trojan, password: pw, sni: chat.openai.com, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 United States | 04, server: us4.example.com, port: 443, type: trojan, password: pw, sni: chat.openai.com, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 United States | 05, server: us5.example.com, port: 443, type: trojan, password: pw, sni: chat.openai.com, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 United States | 06, server: us6.example.com, port: 443, type: trojan, password: pw, sni: chat.openai.com, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 United States | 07, server: us7.example.com, port: 443, type: trojan, password: pw, sni: chat.openai.com, skip-cert-verify: true, udp: true}
+  - {name: 🇺🇸 United States | 08, server: us8.example.com, port: 443, type: trojan, password: pw, sni: chat.openai.com, skip-cert-verify: true, udp: true}
+
+proxy-groups:
+  - name: Proxies
+    type: select
+    proxies:
+      - 🇺🇸 United States | 01
+      - 🇺🇸 United States | 02
+      - 🇺🇸 United States | 03
+      - 🇺🇸 United States | 04
+      - 🇺🇸 United States | 05
+      - 🇺🇸 United States | 06
+      - 🇺🇸 United States | 07
+      - 🇺🇸 United States | 08
+      - 🇭🇰 Hong Kong | 01
+      - 🇭🇰 Hong Kong | 02
+      - 🇭🇰 Hong Kong | 03
+      - 🇭🇰 Hong Kong | 04
+      - 🇭🇰 Hong Kong | 05
+      - 🇭🇰 Hong Kong | 06
+      - 🇭🇰 Hong Kong | 07
+      - 🇭🇰 Hong Kong | 08
+      - 🇯🇵 Japan | 01
+      - 🇯🇵 Japan | 02
+      - 🇯🇵 Japan | 03
+      - 🇯🇵 Japan | 04
+      - 🇯🇵 Japan | 05
+      - 🇯🇵 Japan | 06
+      - 🇯🇵 Japan | 07
+      - 🇯🇵 Japan | 08
+      - 🇸🇬 Singapore | 01
+      - 🇸🇬 Singapore | 02
+      - 🇸🇬 Singapore | 03
+      - 🇸🇬 Singapore | 04
+      - 🇸🇬 Singapore | 05
+      - 🇸🇬 Singapore | 06
+      - 🇸🇬 Singapore | 07
+      - 🇸🇬 Singapore | 08
+      - 🇹🇼 Taiwan | 01
+      - 🇹🇼 Taiwan | 02
+      - 🇹🇼 Taiwan | 03
+      - 🇹🇼 Taiwan | 04
+      - 🇹🇼 Taiwan | 05
+      - 🇹🇼 Taiwan | 06
+      - 🇹🇼 Taiwan | 07
+      - 🇹🇼 Taiwan | 08
+
+  - name: OpenAI
+    type: select
+    proxies:
+      - 🇺🇸 United States | 01
+      - 🇺🇸 United States | 02
+      - 🇺🇸 United States | 03
+      - 🇺🇸 United States | 04
+      - 🇺🇸 United States | 05
+      - 🇺🇸 United States | 06
+      - 🇺🇸 United States | 07
+      - 🇺🇸 United States | 08
+
+  - name: Claude
+    type: select
+    proxies:
+      - 🇺🇸 United States | 01
+      - 🇺🇸 United States | 02
+      - 🇺🇸 United States | 03
+      - 🇺🇸 United States | 04
+      - 🇺🇸 United States | 05
+      - 🇺🇸 United States | 06
+      - 🇺🇸 United States | 07
+      - 🇺🇸 United States | 08
+
+  - name: Google
+    type: select
+    proxies:
+      - Proxies
+
+  - name: GitHub
+    type: select
+    proxies:
+      - Proxies
+
+  - name: YouTube
+    type: select
+    proxies:
+      - Proxies
+
+  - name: X
+    type: select
+    proxies:
+      - Proxies
+
+  - name: Spotify
+    type: select
+    proxies:
+      - 🇭🇰 Hong Kong | 01
+      - 🇭🇰 Hong Kong | 02
+      - 🇭🇰 Hong Kong | 03
+      - 🇭🇰 Hong Kong | 04
+      - 🇭🇰 Hong Kong | 05
+      - 🇭🇰 Hong Kong | 06
+      - 🇭🇰 Hong Kong | 07
+      - 🇭🇰 Hong Kong | 08
+
+rules:
+  # OpenAI / Grok
+  - DOMAIN-SUFFIX,openai.com,OpenAI
+  - DOMAIN-SUFFIX,chat.openai.com,OpenAI
+  - DOMAIN-SUFFIX,auth0.openai.com,OpenAI
+  - DOMAIN-SUFFIX,platform.openai.com,OpenAI
+  - DOMAIN-SUFFIX,x.ai,OpenAI
+  - DOMAIN-SUFFIX,chat.x.ai,OpenAI
+  - DOMAIN-SUFFIX,grok.x.ai,OpenAI
+
+  # Claude
+  - DOMAIN-SUFFIX,claude.ai,Claude
+
+  # Google
+  - DOMAIN-SUFFIX,google.com,Google
+  - DOMAIN-SUFFIX,notebook.google.com,Google
+  - DOMAIN-SUFFIX,gstatic.com,Google
+  - DOMAIN-SUFFIX,googleapis.com,Google
+  - DOMAIN-SUFFIX,googleusercontent.com,Google
+
+  # GitHub
+  - DOMAIN-SUFFIX,github.com,GitHub
+  - DOMAIN-SUFFIX,githubusercontent.com,GitHub
+
+  # YouTube
+  - DOMAIN-SUFFIX,youtube.com,YouTube
+  - DOMAIN-SUFFIX,ytimg.com,YouTube
+  - DOMAIN-SUFFIX,ggpht.com,YouTube
+
+  # Twitter / X
+  - DOMAIN-SUFFIX,twitter.com,X
+  - DOMAIN-SUFFIX,t.co,X
+  - DOMAIN-SUFFIX,x.com,X
+
+  # Spotify
+  - DOMAIN-SUFFIX,spotify.com,Spotify
+
+  # 内网直连
+  - IP-CIDR,127.0.0.0/8,DIRECT
+  - IP-CIDR,10.0.0.0/8,DIRECT
+  - IP-CIDR,172.16.0.0/12,DIRECT
+  - IP-CIDR,192.168.0.0/16,DIRECT
+  - DOMAIN-SUFFIX,local,DIRECT
+  - DOMAIN,localhost,DIRECT
+
+  # 国内网站直连
+  - GEOIP,CN,DIRECT
+
+  # 其他默认代理
+  - MATCH,Proxies
